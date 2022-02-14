@@ -85,6 +85,5 @@ df2<-df2 %>%
   filter(DistinctOccurence>1)
 
 
-# write final masterf ile
-
+# write final masterfile
 write.csv(df2, "list_provisionalID-PrecursorSequence.txt", row.names = F)
