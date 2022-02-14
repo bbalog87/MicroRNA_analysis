@@ -1,5 +1,5 @@
 #!/bin/bash
-
+## mirna detection pipeline with miRDeep2 package
 grep -v ">" mature.miRNA.catalog.fa | sed 's/U/T/g' | sort | uniq | awk
 'BEGIN{i=1}; {print ">seq_"i++; print}' > mirnas.fa
 
